@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@color/backgroundOpacityRed"
+    tools:context=".firstFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundRed">
+
+
+        <TextView
+            android:id="@+id/firstFragmentTVid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="This is First Fragment"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/firstFragmentEnterAnyTextBelowTVid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstFragmentTVid"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:text="Enter any Text below"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/firstFragmentWriteHereEditText1id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstFragmentEnterAnyTextBelowTVid"
+            android:layout_margin="20dp"
+            android:hint="write here"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/firstFragmentButtonid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstFragmentWriteHereEditText1id"
+            android:layout_centerInParent="true"
+            android:text="Enter" />
+
+        <TextView
+            android:id="@+id/firstFragmentOutputTextViewid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstFragmentButtonid"
+            android:layout_margin="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
